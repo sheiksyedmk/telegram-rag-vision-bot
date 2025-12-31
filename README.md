@@ -138,20 +138,19 @@ graph TD
     E --> F["Top-3 chunks<br/>+ source docs"]
     
     C --> G["vision.py<br/>CLIP"]
-    G --> L["Caption +<br/>3 tags"]
+    G --> K["Caption +<br/>3 tags"]
     
-    F --> I[prompts.py<br/>build_prompt]
-    H --> I
-    I --> J["Ollama<br/>llama3"]
-    J --> K["Final Answer<br/>+ Sources"]
+    F --> H[prompts.py<br/>build_prompt]
+    H --> I["Ollama<br/>llama3"]
+    I --> J["Final Answer<br/>+ Sources"]
     
-    K --> L[Telegram Reply]
+    J --> K[Telegram Reply]
     
     style A fill:#e1f5fe
-    style L fill:#c8e6c9
+    style K fill:#c8e6c9
     style E fill:#fff3e0
     style G fill:#f3e5f5
-    style J fill:#e8f5e8
+    style I fill:#e8f5e8
 
 ```
 
