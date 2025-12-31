@@ -68,6 +68,9 @@ python app.py
 
 - `/start`
 - `/ask <question>`
+- `/help`
+- `/history`
+- `/summarize`
 - `/image`
 - Upload a photo
 
@@ -80,7 +83,8 @@ python app.py
 User: /ask What is this project?
 Bot: This project appears to be a set of company policies regarding remote work and employee leave ...
 ```
-![ask-command](https://github.com/sheiksyedmk/telegram-rag-vision-bot/blob/main/images/ask.jpg)
+![ask-command](images/ask.jpg)
+![ask-command](images/cache.jpg)
 
 **/image**
 ```
@@ -120,8 +124,13 @@ The project appears to be a set of company policies regarding remote work and em
 **Image upload**
 ```
 User uploads image
-Bot: A wide photo showing a street
-Tags: Street, Building, Outdoor
+Bot:
+*Image Description:*
+A photo containing plant
+
+*Tags:* Plant, Flower, Bird
+
+Use /ask for text questions or /history to review.
 ```
 
 ![ask-command](images/image_upload.jpg)
