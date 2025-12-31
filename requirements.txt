@@ -1,0 +1,7 @@
+python-telegram-bot
+sentence-transformers
+numpy
+ollama
+Pillow
+transformers
+torch

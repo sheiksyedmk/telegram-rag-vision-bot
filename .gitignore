@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+rag.db
+.env
+.DS_Store
+mrb/
+venv/
