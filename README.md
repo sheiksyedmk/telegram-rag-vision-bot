@@ -79,7 +79,7 @@ python app.py
 ```
 User: /ask What is this project?
 Bot: This project appears to be a set of company policies regarding remote work and employee leave ...
-![ask-command](images/ask.jpg)
+![ask-command](https://github.com/sheiksyedmk/telegram-rag-vision-bot/blob/main/images/ask.jpg)
 ```
 **/image**
 ```
