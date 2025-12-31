@@ -57,6 +57,10 @@ pip install -r requirements.txt
 ### Configure
 Edit `config.py` and add your bot token.
 
+### Knowledge base
+Place your knowledge base documents as `.md` or `.txt` files inside the `data/` folder.  
+These files will be indexed at startup for retrieval.
+
 ### Run
 ```
 python app.py
@@ -75,7 +79,6 @@ python app.py
 - Upload a photo
 
 ---
-
 ## Example Telegram interactions
 
 **/ask**
