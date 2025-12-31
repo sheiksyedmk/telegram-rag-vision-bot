@@ -81,6 +81,7 @@ User: /ask What is this project?
 Bot: This project appears to be a set of company policies regarding remote work and employee leave ...
 ```
 ![ask-command](https://github.com/sheiksyedmk/telegram-rag-vision-bot/blob/main/images/ask.jpg)
+
 **/image**
 ```
 User: /image
@@ -88,6 +89,8 @@ Bot:
 Please send me a photo! I'll describe it and give tags.
 Or use /ask for text questions.
 ```
+![ask-command](images/image.jpg)
+
 **/history**
 ```
 User: /history
@@ -100,6 +103,8 @@ Bot:
 2. Q: what about leave policy...
    A: According to the context, there is a leave policy that outlines rules and proced...
 ```
+![ask-command](images/history.jpg)
+
 **/summarize**
 ```
 User: /summarize
@@ -110,12 +115,16 @@ Here is a 2-3 sentence summary of the conversation:
 The project appears to be a set of company policies regarding remote work and employee leave. T...
 
 ```
+![ask-command](images/summarize.jpg)
+
 **Image upload**
 ```
 User uploads image
 Bot: A wide photo showing a street
 Tags: Street, Building, Outdoor
 ```
+
+![ask-command](images/image_upload.jpg)
 
 ---
 
