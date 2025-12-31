@@ -20,7 +20,7 @@ FALLBACK_LABELS = [
     "a cup", "a bottle", "a tv", "a monitor", "a keyboard", "a mouse", "a bag", 
     "shoes", "clothes", "a plate", "a glass", "a lamp", "a clock", "a picture", 
     "a painting", "a toy", "a ball", "a bike", "a bus", "a truck", "a house", 
-    "a building", "a street", "a photo", "an object", "a scene", "indoor", "outdoor"
+    "a building", "a street", "a photo", "an object", "a scene", "indoor", "outdoor", "a document"
 ]
 
 def describe_image(image_bytes: bytes) -> dict:
