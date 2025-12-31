@@ -131,18 +131,18 @@ Tags: Street, Building, Outdoor
 ```mermaid
 graph TD
     A[Telegram User] -->|"/ask leave policy?"| B[app.py Handler]
-    A -->|"📸 Photo upload"| C[handle_photo]
+    A -->|"Photo upload"| C[handle_photo]
     
     B --> D[rag.py retrieve]
     D --> E["SQLite rag.db<br/>all-MiniLM-L6-v2<br/>(384-dim embeddings)"]
     E --> F["Top-3 chunks<br/>+ source docs"]
     
-    C --> G["vision.py<br/>CLIP-vit-base<br/>(50MB)"]
-    G --> H["Caption +<br/>3 tags"]
+    C --> G["vision.py<br/>CLIP"]
+    G --> L["Caption +<br/>3 tags"]
     
     F --> I[prompts.py<br/>build_prompt]
     H --> I
-    I --> J["Ollama<br/>llama3.2:1b<br/>(1GB)"]
+    I --> J["Ollama<br/>llama3"]
     J --> K["Final Answer<br/>+ Sources"]
     
     K --> L[Telegram Reply]
@@ -153,17 +153,6 @@ graph TD
     style G fill:#f3e5f5
     style J fill:#e8f5e8
 
-```
-```
-
-Telegram User
-     |
-     v
-Python Bot
-  |      |
- RAG   Vision
-  |      |
- Ollama CLIP
 ```
 
 ---

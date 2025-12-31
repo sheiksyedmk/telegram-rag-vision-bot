@@ -153,10 +153,10 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_history[user_id] = user_history[user_id][-3:]
         
         # Format response
-        response = f"**📸 Image Description:**\n{result['caption']}\n\n"
+        response = f"**Image Description:**\n{result['caption']}\n\n"
         if result['tags']:
-            response += f"**🏷️ Tags:** {', '.join(result['tags'])}\n\n"
-        response += "💬 Use /ask for text questions or /history to review."
+            response += f"**Tags:** {', '.join(result['tags'])}\n\n"
+        response += "Use /ask for text questions or /history to review."
         
         await update.message.reply_text(response)
         logger.info(f"User {user_id} image analyzed: {len(result['tags'])} tags")
