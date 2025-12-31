@@ -12,7 +12,7 @@ model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 COMMON_LABELS = [
     "a cat", "a dog", "a person", "people", "a car", "a table", "a chair", "a window", 
     "a door", "food", "a book", "a phone", "a laptop", "a tree", "sky", "water", 
-    "a room", "a couch", "a bed", "kitchen", "animal", "bird", "flower", "plant"
+    "a room", "a couch", "a bed", "kitchen", "animal", "bird", "flower", "plant", "a screenshot", "a document", "text"
 ]
 
 # Broader labels when the image is unclear
@@ -20,7 +20,7 @@ FALLBACK_LABELS = [
     "a cup", "a bottle", "a tv", "a monitor", "a keyboard", "a mouse", "a bag", 
     "shoes", "clothes", "a plate", "a glass", "a lamp", "a clock", "a picture", 
     "a painting", "a toy", "a ball", "a bike", "a bus", "a truck", "a house", 
-    "a building", "a street", "a photo", "an object", "a scene", "indoor", "outdoor", "a document"
+    "a building", "a street", "a photo", "an object", "a scene", "indoor", "outdoor"
 ]
 
 def describe_image(image_bytes: bytes) -> dict:
